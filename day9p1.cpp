@@ -19,11 +19,8 @@ int main() {
 			a.push_back(b);
 		}
 
-		int add = 1;
 		for (auto v : a) {
-			if (add) ans += v[0];
-			else ans -= v[0];
-			add ^= 1;
+			ans += v.back();
 		}
 	}
 	cout << ans << '\n';
